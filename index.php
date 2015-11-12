@@ -64,6 +64,18 @@ if (file_exists( dirname(__FILE__).'/styles/default.sass')) {
 			<a class='btn btn-success' href='/page.html' target='_blank'>PREVIEW</a>
 		</div>
     	<section>
+			<h2>SASS</h2>
+			<form action="/index.php" method="post">
+				<div>
+					<textarea class='editor' id="sass_code" name="code" rows="10" cols="30"><?php echo $sass_code; ?></textarea>
+				</div>
+				<input type="hidden" name="mode" value="sass_edit"/>
+				<div>
+					<button class='btn default'>submit</button>
+				</div>
+			</form>
+		</section>
+    	<section>
 			<h2>HTML</h2>
 			<form action="/index.php" method="post">
 				<div>
@@ -77,18 +89,6 @@ if (file_exists( dirname(__FILE__).'/styles/default.sass')) {
 				</div>
 			</form>
     	</section>
-    	<section>
-			<h2>SASS</h2>
-			<form action="/index.php" method="post">
-				<div>
-					<textarea class='editor' id="sass_code" name="code" rows="10" cols="30"><?php echo $sass_code; ?></textarea>
-				</div>
-				<input type="hidden" name="mode" value="sass_edit"/>
-				<div>
-					<button class='btn default'>submit</button>
-				</div>
-			</form>
-		</section>
 	</div>
 </body>
 </html>
