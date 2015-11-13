@@ -47,7 +47,7 @@ if (file_exists( dirname(__FILE__).'/styles/default.sass')) {
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SASS compiler</title>
+	<title>SASS viewer</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
 	<style>
 		.editor {
@@ -58,7 +58,7 @@ if (file_exists( dirname(__FILE__).'/styles/default.sass')) {
 <body>
     <div class="container">
     	<header>
-    		<h1>SASS compiler</h1>
+    		<h1>SASS viewer</h1>
     	</header>
 		<div>
 			<a class='btn btn-success' href='/page.html' target='_blank'>PREVIEW</a>
